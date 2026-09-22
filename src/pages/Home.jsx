@@ -59,7 +59,7 @@ function Home() {
 
 
                         <a
-                            href="#features"
+                            href="/about"
                             className="hero-button hero-button-secondary"
                         >
                             {translations.home.hero.explore}
