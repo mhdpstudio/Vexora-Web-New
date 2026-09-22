@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 
 import Topbar from "./layouts/Topbar"
 import Footer from "./layouts/Footer"
-import Loading from "./components/loading"
+import Loading from "./components/Loading"
 
 
 function Layout() {
