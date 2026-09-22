@@ -57,13 +57,12 @@ function Home() {
                             {translations.home.hero.download}
                         </NavLink>
 
-
-                        <a
-                            href="/about"
+                        <NavLink
+                            to="/about"
                             className="hero-button hero-button-secondary"
                         >
                             {translations.home.hero.explore}
-                        </a>
+                        </NavLink>
 
                     </div>
 
