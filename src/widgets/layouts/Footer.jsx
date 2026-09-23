@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import useLanguage from "../../hooks/useLanguage"
 
 import "./../../styles/widgets/footer.css"
@@ -11,9 +12,15 @@ function Footer() {
 
             <div className="footer-container">
 
+                {/* Brand */}
                 <div className="footer-brand">
 
-                    <h2>Vexora</h2>
+                    <Link
+                        to="/"
+                        className="footer-logo"
+                    >
+                        Vexora
+                    </Link>
 
                     <p>
                         {translations.footer.description}
@@ -22,6 +29,7 @@ function Footer() {
                 </div>
 
 
+                {/* Links */}
                 <div className="footer-links">
 
                     <div className="footer-column">
@@ -30,21 +38,21 @@ function Footer() {
                             {translations.footer.navigation.title}
                         </h3>
 
-                        <a href="/">
+                        <Link to="/">
                             {translations.footer.navigation.home}
-                        </a>
+                        </Link>
 
-                        <a href="/download">
+                        <Link to="/download">
                             {translations.footer.navigation.download}
-                        </a>
+                        </Link>
 
-                        <a href="/about">
+                        <Link to="/about">
                             {translations.footer.navigation.about}
-                        </a>
+                        </Link>
 
-                        <a href="/contact">
+                        <Link to="/contact">
                             {translations.footer.navigation.contact}
-                        </a>
+                        </Link>
 
                     </div>
 
@@ -55,9 +63,9 @@ function Footer() {
                             {translations.footer.support.title}
                         </h3>
 
-                        <a href="/contact">
+                        <Link to="/contact">
                             {translations.footer.support.contact}
-                        </a>
+                        </Link>
 
                         <a href="#">
                             {translations.footer.support.privacy}
@@ -74,10 +82,15 @@ function Footer() {
             </div>
 
 
+            {/* Bottom */}
             <div className="footer-bottom">
 
                 <span>
                     © {new Date().getFullYear()} Vexora
+                </span>
+
+                <span className="footer-divider">
+                    •
                 </span>
 
                 <span>
@@ -89,5 +102,6 @@ function Footer() {
         </footer>
     )
 }
+
 
 export default Footer
